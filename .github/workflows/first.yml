@@ -1,0 +1,20 @@
+name: Pehla Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Hello Step
+        run: echo "Mera pehla GitHub Actions workflow chal gaya!"
+      
+      - name: Date and Time
+        run: echo "Current date and time is $(date)"
+      
+      - name: System Info
+        run: |
+          echo "Operating System: Ubuntu"
+          echo "Current directory: $(pwd)"
